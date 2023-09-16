@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream City - Venice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #008C9E;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #008C9E;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0;
+            padding: 0;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #008C9E;
+            color: #fff;
+        }
+
+        form {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        footer {
+            background-color: #008C9E;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to Venice</h1>
+    <p>Discover the Magic of the Floating City</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#description">City Description</a></li>
+        <li><a href="#attractions">Attractions</a></li>
+        <li><a href="#statistics">City Statistics</a></li>
+        <li><a href="#feedback">Citizen Feedback</a></li>
+        <li><a href="#quotes">Quotes</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<hr>
+
+<section id="description">
+    <h2>About Venice</h2>
+    <img src="https://plus.unsplash.com/premium_photo-1676120651960-10d61242da46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Picture of Venice" width="500">
+    <p>Venice, the City of Canals, is a place like no other. With its stunning architecture, rich history, and romantic ambiance, it's a dream destination for travelers.</p>
+</section>
+
+<hr>
+
+<section id="attractions">
+    <h2>Top Attractions</h2>
+    <h3>Main Attractions</h3>
+    <ul>
+        <li>Rialto Bridge</li>
+        <li>St. Mark's Basilica</li>
+        <li>Doge's Palace</li>
+    </ul>
+    <h3>Local Favorites</h3>
+    <ol>
+        <li>Take a Gondola Ride</li>
+        <li>Visit the Murano Glass Factory</li>
+        <li>Explore the Grand Canal</li>
+    </ol>
+</section>
+
+<hr>
+
+<section id="statistics">
+    <h2>City Statistics</h2>
+      <table border = "1">
+         <tr>
+            <th>Attribute</th>
+            <th>Value</th>
+         </tr>
+         <tr>
+            <td>Population</td>
+            <td>2.6 Million</td>
+         </tr>
+         <tr>
+            <td>Landmarks	</td>
+            <td>414</td>
+         </tr>
+         <tr>
+            <td>Parks</td>
+            <td>560</td>
+         </tr>
+         <tr>
+            <td>Schools</td>
+            <td>30</td>
+         </tr>
+         <tr>
+            <td>Bridges</td>
+            <td>400</td>
+         </tr>
+      </table>
+
+</section>
+
+<hr>
+
+<section id="feedback">
+    <h2>Citizen Feedback</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="feedbackType">Feedback Type:</label>
+        <select id="feedbackType" name="feedbackType">
+            <option value="Compliment">Compliment</option>
+            <option value="Suggestion">Suggestion</option>
+            <option value="Complaint">Complaint</option>
+        </select><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" required></textarea><br>
+
+        <label for="subscribe">Subscribe to Newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+<hr>
+
+<section id="quotes">
+    <h2>Quotes from Citizens</h2>
+    <p><span>"Venice is a place where time stands still, and every corner holds a story."</span> - Maria, Venice Resident</p>
+    <p><span>"The beauty of Venice is in its imperfections, where even a maze of alleyways feels like an adventure."</span> - Luca, Venice Lover</p>
+</section>
+
+<hr>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <address>
+        <p><i>City Tourism Office</i></p>
+        <p>123 Canalside Avenue</p>
+        <p>Venice, Italy</p>
+        <p><a href="mailto:info@venicetourism.com">info@venicetourism.com</a></p>
+    </address>
+</section>
+
+<footer>
+    <p>&copy; 2023 Venice Tourism. All rights reserved.</p>
+</footer>
+</body>
+</html>
